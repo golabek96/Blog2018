@@ -24,9 +24,6 @@ public class Comment implements Comparable<Comment>{
         this.date = date;
     }
 
-    Comment() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
      
     public String getAuthor() {
         return author;
