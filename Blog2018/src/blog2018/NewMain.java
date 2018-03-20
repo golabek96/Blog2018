@@ -1,6 +1,7 @@
 package blog2018;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
 
@@ -22,8 +23,8 @@ public class NewMain {
         System.out.println("-----");
         System.out.println(blog.mostPopular());
         System.out.println("-----");
-        LocalDate d1 = LocalDate.of(2018, Month.MARCH, 1);
-        LocalDate d2 = LocalDate.of(2018, Month.FEBRUARY, 2);
+        LocalDateTime d1 = LocalDateTime.of(2018, Month.MARCH, 1,4,2);
+        LocalDateTime d2 = LocalDateTime.of(2018, Month.FEBRUARY, 2,5,2);
         long u = d1.until(d2,ChronoUnit.DAYS);
         System.out.println(u);
         long u2 = d2.until(d1,ChronoUnit.DAYS);
